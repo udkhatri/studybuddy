@@ -1,9 +1,7 @@
 import React from 'react'
 import { StyleSheet, View,StatusBar, Image } from 'react-native'
 import { Button,Text, TextInput,Modal, Portal, Provider  } from 'react-native-paper';
-import Constants from 'expo-constants'
-import ButtonExample from '../../components/customButton'
-import LottieView from 'lottie-react-native'
+
 export default function signup({ navigation }) {
     const [num, setNum] = React.useState('');
     const [name, setName] = React.useState('');
@@ -16,7 +14,7 @@ export default function signup({ navigation }) {
 
     return (
         <View style={{backgroundColor:'#fff', flex:1}}>
-            <View style={{flex:1, marginTop: Constants.statusBarHeight,}}>
+            <View style={{flex:1, marginTop: 24}}>
             <Image
                 style={styles.tinyLogo}
                 source={require('../../Images/dummy-logo.png')}
