@@ -13,13 +13,13 @@ export default function login({ navigation }) {
 
     return (
         <View style={{backgroundColor:'#fff', flex:1}}>
-            <View style={{flex:1, marginTop: 24,}}>
+            
             <Image
                 style={styles.tinyLogo}
                 source={require('../../Images/dummy-logo.png')}
                 style={styles.image}
             />
-            </View>
+           
         <View style={styles.container}>
             <Text style={{fontSize: 40, marginBottom:20}}>Sign in</Text>
         <TextInput
@@ -38,6 +38,13 @@ export default function login({ navigation }) {
                 dark= {true}
                 onPress={showModal}>
                     Send OTP
+            </Button>
+             <Button 
+                raised mode="contained" 
+                style={styles.button}
+                dark= {true}
+                onPress={() => navigation.navigate('Home')}>
+                    Home page
             </Button>
             <Portal>
                 <Modal visible={visible} onDismiss={hideModal} contentContainerStyle={containerStyle}>
@@ -62,9 +69,10 @@ export default function login({ navigation }) {
 const styles = StyleSheet.create({
  container:{
     marginHorizontal: 9,
-    justifyContent: 'flex-end',
-    marginBottom: 36
-    
+    width:"90%",
+    bottom:0,
+    position: 'absolute',
+    alignSelf: 'center'
  },
  image:{
      alignSelf:'center',

@@ -14,14 +14,13 @@ export default function signup({ navigation }) {
 
     return (
         <View style={{backgroundColor:'#fff', flex:1}}>
-            <View style={{flex:1, marginTop: 24}}>
+            <View style={styles.container}>
             <Image
-                style={styles.tinyLogo}
                 source={require('../../Images/dummy-logo.png')}
                 style={styles.image}
             />
-            </View>
-        <View style={styles.container}>
+            
+        
             <Text style={{fontSize: 40, marginBottom:20}}>Sign up</Text>
         <TextInput 
             label="Full Name"
@@ -71,9 +70,10 @@ export default function signup({ navigation }) {
 const styles = StyleSheet.create({
  container:{
     marginHorizontal: 9,
-    justifyContent: 'flex-end',
-    marginBottom: 36
-    
+    width:"90%",
+    bottom:0,
+    position: 'absolute',
+    alignSelf: 'center'
  },
  image:{
      alignSelf:'center',
