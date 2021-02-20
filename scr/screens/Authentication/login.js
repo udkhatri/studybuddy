@@ -14,7 +14,7 @@ export default function login({ navigation }) {
 
     return (
         <View style={{backgroundColor:'#fff', flex:1}}>
-             <ImageBackground source={require('../../Images/Background/12.png')} style={styles.imageBack}>
+             <ImageBackground source={require('../../Images/Background/loginBck.png')} style={styles.imageBack}>
             <View style={styles.container}>
                     <Text style={{fontSize: 40, marginBottom:20}}>Sign in</Text>
                     <TextInput
