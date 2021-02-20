@@ -4,7 +4,7 @@ import React from 'react';
 import HomeBottomTabNavigator from './bottomTab';
 import loginScreen from '../screens/Authentication/login';
 import SignupScreen from '../screens/Authentication/signup';
-
+import OnBoarding from "../screens/UI/onBoarding";
 const Stack = createStackNavigator();
 
 const RootNavigation = () => {
@@ -14,6 +14,15 @@ const RootNavigation = () => {
         screenOptions={{
           headerShown: false,
         }}>
+        {/* <Stack.Screen
+          options={{
+            headerShown: false,
+            title: 'Post',
+            // headerTransparent: true
+          }}
+          name="OnBoarding"
+          component={OnBoarding}
+        /> */}
         <Stack.Screen
           options={{
             headerShown: false,

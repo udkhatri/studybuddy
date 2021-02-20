@@ -4,7 +4,7 @@ import { DefaultTheme,DarkTheme, Provider as PaperProvider } from 'react-native-
 import { name as appName } from './app.json';
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
-import Navigation from './scr/navigation/index'
+import Navigation from './scr/navigation/index';
 const theme = {
   ...DefaultTheme,
   roundness: 6,
@@ -13,7 +13,6 @@ const theme = {
     primary: '#3498db',
     accent: '#f1c40f',
     background: '#fff',
-    
   },
   
 };
