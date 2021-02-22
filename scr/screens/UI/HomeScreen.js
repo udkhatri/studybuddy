@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
   container: {
     width: '100%',
-    height: Dimensions.get('screen').height - 45,
+    height: Dimensions.get('screen').height - 60,
     backgroundColor: '#fff',
   },
   banner: {
