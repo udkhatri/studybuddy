@@ -16,8 +16,6 @@ const RootNavigation = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Home" component={HomeBottomTabNavigator} />
-
         <Stack.Screen
           options={{
             headerShown: false,
@@ -52,6 +50,7 @@ const RootNavigation = () => {
           name="BookCategories"
           component={BookCategories}
         />
+        <Stack.Screen name="Home" component={HomeBottomTabNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   );
